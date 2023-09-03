@@ -1,0 +1,25 @@
+import java.util.* ;
+import java.io.*; 
+public class stringg {
+
+        public static void main(String[] args){
+        	int temp,sum=0,rem;
+        	int num=2002;
+        	temp=num;
+        	while(num>0) {
+        		rem=num%10;
+        		sum=(sum*10)+rem;
+        		num=num/10;
+        	}
+        	if(temp==sum) {
+        		System.out.println("palindrome number");
+        	}
+        	else {
+        		System.out.println("not a palindrome");
+        	}
+        	
+        	}
+
+
+        }
+    
