@@ -1,0 +1,35 @@
+  class add{
+	int a=10;
+	int b=20;
+	public void add() {
+		int a=10;
+		int b=20;
+		System.out.println(a+b);
+	}
+	
+}
+  	class sub extends add {
+	public void sub() {
+		System.out.println(a-b);
+	}
+	}
+ class mul extends add{ ///concrete classsss-because we need to create abstract class objects
+	public void mul() {
+		System.out.println(a*b);
+	}
+	public void div() {
+		System.out.println(a%b);
+	}
+}
+class case1{
+	public static void main(String[]args) {
+		mul obj=new mul();
+				obj.add();
+				obj.mul();
+				obj.div();
+				
+		
+		
+	}
+}
+	
